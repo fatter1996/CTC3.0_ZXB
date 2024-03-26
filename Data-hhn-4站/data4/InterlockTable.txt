@@ -1,0 +1,36 @@
+//联锁表-阿贵图(2.5版本)
+//序号|类型|按钮      |信号机      |道岔     |区段     |敌对信号
+//列车
+0    |LCJL|SLA,X3LA    |S     |2,(4-6)                     |IIBG,2-4DG,6DG,3G                     |D2,X3;
+1    |LCJL|SLA,XIILA    |S     |2,4-6                     |IIBG,2-4DG,IIG                     |D2,XII;
+2    |LCJL|SLA,X1LA    |S     |(2)                     |IIBG,2-4DG,1G                     |D2,X1;
+3    |LCJL|X3LA,SLA    |X3     |(4-6),2                     |6DG,2-4DG,IIBG,SJG                     |D2,S;
+4    |LCJL|X3LA,PZA    |X3     |4-6                     |6DG                     |PZA;
+5    |LCJL|XIILA,SLA    |XII     |4-6,2                     |2-4DG,IIBG,SJG                     |D2,S;
+6    |LCJL|X1LA,SLA    |X1     |(2)                     |2-4DG,IIBG,SJG                     |D2,S;
+7    |LCJL|S3LA,XLA    |S3     |1                     |1-3DG,IIAG,XJG                     |D1,X;
+8    |LCJL|SIILA,XLA    |SII     |3,(1)                     |1-3DG,IIAG,XJG                     |D1,X;
+9    |LCJL|S1LA,XLA    |S1     |(3),(1)                     |1-3DG,IIAG,XJG                     |D1,X;
+//延续
+10    |LCJL|XLA,S3LA,SLA      |X     |1,(4-6),2     |IIAG,1-3DG,3G,6DG,2-4DG,IIBG     |D1,S3,D2,S;
+11    |LCJL|XLA,S3LA,PZA      |X     |1,4-6     |IIAG,1-3DG,3G,6DG     |D1,S3,PZA;
+12    |LCJL|XLA,SIILA,SLA      |X     |(1),3,4-6,2     |IIAG,1-3DG,IIG,2-4DG,IIBG     |D1,SII,D2,S;
+13    |LCJL|XLA,S1LA,SLA      |X     |(1),(3),(2)     |IIAG,1-3DG,1G,2-4DG,IIBG     |D1,S1,D2,S;
+//通过
+14    |TGJL|STA,XLA    |S     |2,4-6,3,(1)                     |IIBG,2-4DG,1-3DG,IIAG,XJG                     |D2,XII,D1,X;
+15    |TGJL|XTA,SLA    |X     |(1),3,4-6,2                     |IIAG,1-3DG,2-4DG,IIBG,SJG                     |D1,SII,D2,S;
+//调车
+16    |DCJL|D2A,X3DA    |D2     |2,(4-6)                     |2-4DG,6DG                     |X3;
+17    |DCJL|D2A,XIIDA    |D2     |2,4-6                     |2-4DG                     |XII;
+18    |DCJL|D2A,X1DA    |D2     |(2)                     |2-4DG                     |X1;
+19    |DCJL|X3DA,D2A    |X3     |(4-6),2                     |6DG,2-4DG                     |D2;
+20    |DCJL|XIIDA,D2A    |XII     |4-6,2                     |2-4DG                     |D2;
+21    |DCJL|X1DA,D2A    |X1     |(2)                     |2-4DG                     |D2;
+22    |DCJL|S3DA,D1A    |S3     |1                     |1-3DG                     |D1;
+23    |DCJL|SIIDA,D1A    |SII     |3,(1)                     |1-3DG                     |D1;
+24    |DCJL|S1DA,D1A    |S1     |(3),(1)                     |1-3DG                     |D1;
+25    |DCJL|D1A,S3DA    |D1     |1                     |1-3DG                     |S3;
+26    |DCJL|D1A,SIIDA    |D1     |(1),3                     |1-3DG                     |SII;
+27    |DCJL|D1A,S1DA    |D1     |(1),(3)                     |1-3DG                     |S1;
+####
+//结束标识

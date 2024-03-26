@@ -1,0 +1,2 @@
+http://yangjinxin@192.168.0.100:10101/r/QtCTCSim.git
+http://yangjinxin@192.168.0.100:10101/r/QtCTCDataServer.git 

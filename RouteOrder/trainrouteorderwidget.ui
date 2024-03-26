@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrainRouteOrderWidget</class>
+ <widget class="QWidget" name="TrainRouteOrderWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>259</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+	background-color: rgb(0, 240, 0);
+}
+QMenu::item {
+	color: black;
+}
+
+QMenu::item:selected {
+	color: black;
+	background-color: rgb(208, 208, 208);
+}
+
+
+QAction::disabled{color:rgb(0, 208, 0);}
+
+QScrollBar:vertical {
+ 	width: 16px;
+}
+
+QScrollBar::handle:vertical {
+	background-color: rgba(160, 160, 160, 240);
+	min-height: 24px;
+	border-radius:3px; 
+	margin: 10px 5px 10px 5px;
+}
+
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:vertical:pressed {
+	background-color: rgba(160, 160, 160, 240);
+	min-height: 24px;
+ 	border-radius: 3px;
+	margin: 10px 5px 10px 5px;
+}
+
+QScrollBar::sub-page:vertical {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::add-page:vertical {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::sub-line:vertical {
+      border: none;
+}
+
+QScrollBar::add-line:vertical {
+      border: none;
+}
+
+
+QScrollBar:horizontal {
+ 	height: 16px;
+}
+
+QScrollBar::handle:horizontal {
+	background-color: rgba(160, 160, 160, 240);
+	border-radius:3px; 
+	margin: 5px 10px 5px 10px;
+}
+
+QScrollBar::handle:horizontal:hover,
+QScrollBar::handle:horizontal:pressed {
+	background-color: rgba(160, 160, 160, 240);
+ 	border-radius: 3px;
+	margin: 5px 10px 5px 10px;
+}
+
+QScrollBar::sub-page:horizontal {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::add-page:horizontal {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::sub-line:horizontal  {
+      border: none;
+}
+
+QScrollBar::add-line:horizontal  {
+      border: none;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
